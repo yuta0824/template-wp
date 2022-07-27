@@ -1,0 +1,16 @@
+.l-about {
+	color: red;
+}
+
+.p-about {
+	color: red;
+}
+
+@media (max-width: 767px) {
+
+.l-about {
+	color: blue;
+}
+
+}
+
