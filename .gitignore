@@ -1,0 +1,5 @@
+devsrc/node_modules
+devsrc/package-lock.json
+wp-theme/assets/css/style.css
+.DS_Store
+.vscode/
