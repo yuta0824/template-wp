@@ -1,7 +1,9 @@
-.about {
+@use "../../../global" as *;
+
+.l-about {
   color: red;
 
-  @include mq('sp') {
+  @include mq("sp") {
     color: blue;
   }
 }

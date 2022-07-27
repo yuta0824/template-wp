@@ -1,7 +1,3 @@
-.about {
+.p-about {
   color: red;
-
-  @include mq('sp') {
-    color: blue;
-  }
 }
