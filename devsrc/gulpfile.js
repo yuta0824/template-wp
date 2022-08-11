@@ -1,15 +1,4 @@
 const gulp = require("gulp");
-
-/* sass */
-// const sass = require("gulp-sass");
-// const plumber = require("gulp-plumber");
-// const notify = require("gulp-notify");
-// const sassGlob = require("gulp-sass-glob");
-// const mmq = require("gulp-merge-media-queries");
-// const postcss = require("gulp-postcss");
-// const autoprefixer = require("autoprefixer");
-// const cssdeclsort = require("css-declaration-sorter");
-
 const sass = require("gulp-dart-sass");
 const plumber = require("gulp-plumber");
 const notify = require("gulp-notify");
@@ -30,7 +19,6 @@ gulp.task("sass", function() {
 		.pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
 		.pipe(sassGlob())
 		.pipe(sass({ outputStyle: "expanded" }))
-		// .pipe(sass(  includePaths: ['../sass'],))
 		.pipe(postcss([autoprefixer()]))
 		.pipe(postcss([cssdeclsort({ order: "alphabetical" })]))
 		.pipe(mmq())
